@@ -1,0 +1,52 @@
+@import "../common/common.less";
+
+.banner {
+    position: relative;
+    z-index: 10;
+
+    .banner-bg {
+        width: 100%;
+        position: relative;
+    }
+    .banner-small {
+        position: relative;
+        height: 1.8rem;
+        width: 100%;
+
+        .idea {
+            height: 1.8rem;
+            background: url("@{imgPath}home/idea.jpg") no-repeat center;
+        }
+        .team {
+            height: 1.8rem;
+            background: url("@{imgPath}home/team.jpg") no-repeat center;
+        }
+        .business {
+            height: 1.8rem;
+            background: url("@{imgPath}home/business.jpg") no-repeat center;
+        }
+    }
+
+    .triangle {
+        position: absolute;
+        display: flex;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: .11rem;
+        z-index: 1200;
+        width: 100%;
+        float: left;
+        background: url("@{imgPath}home/down_arrow.png") no-repeat center center;
+        background-size: 100% 100%;
+
+        .triangle-center {
+
+        }
+    }
+
+    .swiper-slide{
+        margin-bottom: -22px;
+    }
+}
+

@@ -1,0 +1,122 @@
+
+*, :after, :before {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+@imgPath: "../../assets/";
+// @imgpath: "/pano/static/images/";
+// @MAXWIDTH: 1180px;
+@MAXWIDTH: 1200px;
+@baseColor: #44d35d;
+@fontColor: #757476;
+
+.fontColor{
+    color: @fontColor;
+}
+.baseColor{
+    color: @baseColor;
+}
+.bg(@color){
+    background-color: @color;
+}
+.maxwidth(){
+    width: @MAXWIDTH;
+    margin: 0 auto;
+}
+
+.size(@w,@h){
+    width: @w;
+    height: @h;
+}
+
+.h(@h){
+    height: @h;
+}
+
+.w(@w){
+    width: @w;
+}
+
+.fs(@fs){
+    font-size: @fs;
+}
+
+.lh(@lh){
+    line-height: @lh;
+}
+
+.c(@color){
+    color: @color;
+}
+
+.flex(){
+    display: flex;
+    display: -webkit-flex;
+}
+.flex-item(@val:1){
+    -webkit-flex:@val;
+    flex:@val;
+}
+
+.flex-center(){
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.bd(@c:#d5d4d2){
+    border: solid 1px @c;
+}
+
+.bd-r(@c:#d5d4d2){
+    border-right: solid 1px @c;
+}
+
+.bd-l(@c:#d5d4d2){
+    border-left: solid 1px @c;
+}
+
+.bd-b(@c:#d5d4d2){
+    border-bottom: solid 1px @c;
+}
+.bd-t(@c:#d5d4d2){
+    border-top: solid 1px @c;
+}
+
+.btn(){
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.transform(@param){
+    -webkit-transform:@param;
+    -o-transform:@param;
+    -ms-transform:@param;
+    transform:@param;
+    -moz-transform:@param;
+}
+
+.transition(@param){
+    transition: @param;
+    -ms-transition:@param;
+    -moz-transition: @param; /* Firefox 4 */
+    -webkit-transition: @param; /* Safari 和 Chrome */
+    -o-transition: @param; /* Opera */
+}

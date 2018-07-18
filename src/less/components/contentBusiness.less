@@ -1,0 +1,137 @@
+@import "../common/common.less";
+.content-business{
+    background: #fff;
+    margin: 0 auto;
+    padding: 0 .21rem 1rem;
+    position: relative;
+    z-index: 1;
+
+    .title{
+        font-size: .15rem;
+        font-weight: bold;
+        color: #333;
+        margin: .5rem 0 .07rem 0;
+
+        &:nth-of-type(1){
+            margin-top: .25rem;
+        }
+    }
+
+    .prompt{
+        font-size: .1rem;
+        color: #666;
+        line-height: .14rem;
+        margin: 0;
+    }
+
+    .companyInfo{
+
+        dl{
+            float: left;
+            height: .21rem;
+            margin: .25rem 0 0;
+            width: 100%;
+
+            dd{
+                float: left;
+                width: .21rem;
+                height: .21rem;
+                margin: 0;
+
+                &.phone{
+                    background: url("@{imgPath}home/phone.png") no-repeat center;
+                    background-size: contain;
+                }
+
+                &.address{
+                    background: url("@{imgPath}home/address.png") no-repeat center;
+                    background-size: contain;
+                }
+
+                &.email{
+                    background: url("@{imgPath}home/email.png") no-repeat center;
+                    background-size: contain;
+                }
+
+            }
+
+            dt{
+                float: left;
+                height: .21rem;
+
+                p{
+                    padding-left: .09rem;
+                    margin: 0;
+                    line-height: .21rem;
+                    font-size: .12rem;
+                    color: #666;
+
+                    span{
+                        padding-left: .24rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .postMsg{
+        .input-text{
+            margin: 0;
+
+            input{
+                float: left;
+                width: 100%;
+                border: none;
+                margin-top: .19rem;
+                border-bottom: 1px solid #e1e1e1;
+                font-size: .12rem;
+                line-height: .17rem;
+                height: .17rem;
+                color: #999;
+            }
+
+            input:focus {
+                outline: none;
+                border-color: #333;
+                color: #333;
+            }
+        }
+
+        textarea{
+            font-family: regular, Arial, '微软雅黑', 'Microsoft JhengHei', sans-serif;
+            margin-top: .19rem;
+            height: 1rem;
+            width: 100%;
+            font-size: .12rem;
+            float: left;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            color: #999;
+        }
+
+        textarea:focus{
+            float: left;
+            outline: none;
+            border-color: #333;
+            resize: none;
+            color: #333;
+        }
+
+        .btn{
+            width: .87rem;
+            height: .3rem;
+            text-align: center;
+            line-height: .3rem;
+            float: left;
+            margin: .25rem 0 1rem 0;
+            cursor: pointer;
+            color: #fff;
+            font-size: .14rem;
+            background: url("@{imgPath}home/button_send.png") no-repeat center;
+
+            //&:hover{
+            //    background: url("@{imgPath}home/button_send_hover.png") no-repeat center;
+            //}
+        }
+    }
+}
