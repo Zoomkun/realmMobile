@@ -5,12 +5,12 @@
                 <div class="swiper-container banner-container">
                     <ul class="swiper-wrapper">
                         <li class="swiper-slide">
-                            <a href="https://www.baidu.com" target="_blank">
+                            <a href="http://nxh.bcrealm.com" target="_blank">
                                 <img src="@/assets/home/banner1.jpg" style="width: 100%" alt="">
                             </a>
                         </li>
                         <li class="swiper-slide">
-                            <a href="https://www.baidu.com" target="_blank">
+                            <a href="http://bbm.bcrealm.com" target="_blank">
                                 <img src="@/assets/home/banner2.jpg" style="width: 100%" alt="">
                             </a>
                         </li>
@@ -65,9 +65,12 @@
                         bulletActiveClass: 'banner-bullet-active'
                     },
                     on: {
-                        click: function () {
+                        touchMove: function () {
                             bus.$emit('toChangeSwiper', swiper.realIndex)
                         },
+                        autoplay: function () {
+                            bus.$emit('toChangeSwiper', swiper.realIndex)
+                        }
                     },
                 })
             },
@@ -81,7 +84,9 @@
     .banner-bullets {
         position: absolute;
         left: 0;
-        bottom: 0 !important;
+        bottom: .3rem !important;
+        height: .05rem;
+        line-height: .05rem;
         text-align: center;
         z-index: 2;
     }
@@ -91,6 +96,7 @@
         width: .35rem;
         height: .05rem;
         margin-right: .05rem;
+        vertical-align: top;
         border-radius: 0;
         background: #fff;
         opacity: .5;

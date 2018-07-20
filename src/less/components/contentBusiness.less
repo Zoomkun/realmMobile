@@ -28,7 +28,7 @@
 
         dl{
             float: left;
-            height: .21rem;
+            //height: .21rem;
             margin: .25rem 0 0;
             width: 100%;
 
@@ -37,22 +37,6 @@
                 width: .21rem;
                 height: .21rem;
                 margin: 0;
-
-                &.phone{
-                    background: url("@{imgPath}home/phone.png") no-repeat center;
-                    background-size: contain;
-                }
-
-                &.address{
-                    background: url("@{imgPath}home/address.png") no-repeat center;
-                    background-size: contain;
-                }
-
-                &.email{
-                    background: url("@{imgPath}home/email.png") no-repeat center;
-                    background-size: contain;
-                }
-
             }
 
             dt{
@@ -69,6 +53,47 @@
                     span{
                         padding-left: .24rem;
                     }
+                }
+            }
+        }
+
+        .addressBox{
+            margin: .205rem 0 0;
+
+            dd{
+                background: url("@{imgPath}home/address.png") no-repeat center;
+                background-size: contain;
+            }
+        }
+
+        .qrCodeBox{
+            dd{
+                background: url("@{imgPath}home/qrCode_icon.png") no-repeat center;
+                background-size: contain;
+            }
+
+            dt{
+                position: relative;
+                top: -.02rem;
+                width: .65rem;
+                height: .65rem;
+                background: url("@{imgPath}home/qrCode.png") no-repeat center;
+                background-size: contain;
+            }
+        }
+
+        .phoneBox{
+            dd{
+                background: url("@{imgPath}home/phone.png") no-repeat center;
+                background-size: contain;
+            }
+
+            dt{
+                height: .42rem;
+
+                p{
+                    position: relative;
+                    top:-0.045rem;
                 }
             }
         }

@@ -3,22 +3,23 @@
         <h2 class="title">商业合作联系方式</h2>
         <p class="prompt">如果您需要任何帮助，请与我们联系或发送电子邮件给我们。<br/> 我们会尽快答复您</p>
         <div class="companyInfo clear">
-            <dl>
-                <dd class="phone"></dd>
+            <dl class="phoneBox">
+                <dd></dd>
                 <dt>
+                    <p>联系人：曹先生</p>
                     <p>手机：13888888888<span>座机：0755-123456</span></p>
                 </dt>
             </dl>
-            <dl>
-                <dd class="address"></dd>
+            <dl class="addressBox">
+                <dd></dd>
                 <dt>
                     <p>南山区天工道科技北路南玻电子大厦302室</p>
                 </dt>
             </dl>
-            <dl>
-                <dd class="email"></dd>
+            <dl class="qrCodeBox">
+                <dd></dd>
                 <dt>
-                    <p>support@supernovatheme.com</p>
+                    <p></p>
                 </dt>
             </dl>
         </div>

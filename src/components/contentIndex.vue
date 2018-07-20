@@ -3,7 +3,7 @@
         <dl class="gameBox clear">
             <dd>
                 <div class="gameImage" :style="{backgroundImage:'url(' + gameData[swiper.swiperIndex].image+')'}"></div>
-                <p>币家摇钱树</p>
+                <p>{{gameData[swiper.swiperIndex].name}}</p>
             </dd>
             <dt v-html="gameData[swiper.swiperIndex].info">
                 {{gameData[swiper.swiperIndex].info}}
@@ -25,11 +25,13 @@
                 gameData: [
                     {
                         image: require('@/assets/home/gameImage.png'),
-                        info:'<span style="font-weight: bold;">币家摇钱树1</span>是由腾讯游戏开发并运行的_款运营在Android、IOS平台上的MOBA类手机游戏，于2015年11月26日在Android、IOS平台上正式公测，游戏前期使用名称有《英雄战迹》、《王者联盟》。<br/>币家摇钱树的欧美版本于2018年在任天堂Switch平台发售。<br/>游戏是类dota手游，游戏中的玩法以战为主，玩家间进行1V1、3V3、5V5等多种放的PVP对战，顾以参加游戏的冒险模式，进行PVE的闯关模式，在满足条件后可以参加游戏排位赛等。<br/>2016年11月，币家摇钱树荣登2016中国泛娱乐指数盛典"中国IP价值榜-游戏榜toplO"。'
+                        name:'币家摇钱树',
+                        info:'<span style="font-weight: bold;">币家摇钱树</span>于2018年7月4日上线。<br/>在该游戏中，玩家需要通过与好友进行互动，学习了解最新的行业资讯等方式增加自己的种植能力，加快树木的成长。游戏中的排行榜功能，记录了每个用户对植树的贡献。该游戏在上线的短短十几天时间内，获得了数十万玩家的喜爱，形成了自己的游戏文化。'
                     },
                     {
                         image: require('@/assets/home/gameImage.png'),
-                        info:'<span style="font-weight: bold;">币家摇钱树2</span>是由腾讯游戏开发并运行的_款运营在Android、IOS平台上的MOBA类手机游戏，于2015年11月26日在Android、IOS平台上正式公测，游戏前期使用名称有《英雄战迹》、《王者联盟》。<br/>币家摇钱树的欧美版本于2018年在任天堂Switch平台发售。<br/>游戏是类dota手游，游戏中的玩法以战为主，玩家间进行1V1、3V3、5V5等多种放的PVP对战，顾以参加游戏的冒险模式，进行PVE的闯关模式，在满足条件后可以参加游戏排位赛等。<br/>2016年11月，币家摇钱树荣登2016中国泛娱乐指数盛典"中国IP价值榜-游戏榜toplO"。'
+                        name:'宁夏红传奇',
+                        info:'<span style="font-weight: bold;">宁夏红传奇</span>是一部基于宁夏红枸杞酒的种酿造玩法的小游戏<br/>在游戏里，用户扮演的是酒庄庄主的身份，可以通过在庄园内种植并收集枸杞，每4斤枸杞才能酿造出一瓶宁夏红枸杞酒。酿造完成后即可获得相应的币奖励。<br/>在游戏中，您还可以添加好友与好友进行互动，分享酿酒心得，并了解当前最新的宁夏红产品资讯以及区块链知识。'
                     }
                 ]
             }
